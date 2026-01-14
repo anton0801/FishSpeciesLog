@@ -6,13 +6,34 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8F996E082F17E67F00B0946E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8F996E072F17E67F00B0946E /* FirebaseAnalytics */; };
+		8F996E0A2F17E67F00B0946E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8F996E092F17E67F00B0946E /* FirebaseAuth */; };
+		8F996E0C2F17E67F00B0946E /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8F996E0B2F17E67F00B0946E /* FirebaseDatabase */; };
+		8F996E0E2F17E67F00B0946E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8F996E0D2F17E67F00B0946E /* FirebaseMessaging */; };
+		8F996E112F17E69000B0946E /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 8F996E102F17E69000B0946E /* AppsFlyerLib */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		8FC43A092F0BDF49005983DC /* FishSpeciesLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishSpeciesLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8F996E4C2F17FAF800B0946E /* Exceptions for "FishSpeciesLog" folder in "FishSpeciesLog" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8FC43A082F0BDF49005983DC /* FishSpeciesLog */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8FC43A0B2F0BDF49005983DC /* FishSpeciesLog */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8F996E4C2F17FAF800B0946E /* Exceptions for "FishSpeciesLog" folder in "FishSpeciesLog" target */,
+			);
 			path = FishSpeciesLog;
 			sourceTree = "<group>";
 		};
@@ -23,6 +44,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F996E0E2F17E67F00B0946E /* FirebaseMessaging in Frameworks */,
+				8F996E112F17E69000B0946E /* AppsFlyerLib in Frameworks */,
+				8F996E0C2F17E67F00B0946E /* FirebaseDatabase in Frameworks */,
+				8F996E082F17E67F00B0946E /* FirebaseAnalytics in Frameworks */,
+				8F996E0A2F17E67F00B0946E /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +91,11 @@
 			);
 			name = FishSpeciesLog;
 			packageProductDependencies = (
+				8F996E072F17E67F00B0946E /* FirebaseAnalytics */,
+				8F996E092F17E67F00B0946E /* FirebaseAuth */,
+				8F996E0B2F17E67F00B0946E /* FirebaseDatabase */,
+				8F996E0D2F17E67F00B0946E /* FirebaseMessaging */,
+				8F996E102F17E69000B0946E /* AppsFlyerLib */,
 			);
 			productName = FishSpeciesLog;
 			productReference = 8FC43A092F0BDF49005983DC /* FishSpeciesLog.app */;
@@ -94,6 +125,10 @@
 			);
 			mainGroup = 8FC43A002F0BDF49005983DC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8F996E062F17E67F00B0946E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8F996E0F2F17E69000B0946E /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8FC43A0A2F0BDF49005983DC /* Products */;
 			projectDirPath = "";
@@ -249,8 +284,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FishSpeciesLog/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Fish Species Log";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow to use it in application";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Fish Species Log may collect limited device-related information to support app functionality and understand how features are used. This data helps us improve reliability and refine the user experience. The information is not used to track activity across other apps or websites and is not shared for third-party advertising.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -265,7 +303,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.specilogfis.FishSpeciesLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -289,8 +327,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FishSpeciesLog/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Fish Species Log";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow to use it in application";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Fish Species Log may collect limited device-related information to support app functionality and understand how features are used. This data helps us improve reliability and refine the user experience. The information is not used to track activity across other apps or websites and is not shared for third-party advertising.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -305,7 +346,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.specilogfis.FishSpeciesLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -341,6 +382,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F996E062F17E67F00B0946E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
+		8F996E0F2F17E69000B0946E /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F996E072F17E67F00B0946E /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F996E062F17E67F00B0946E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		8F996E092F17E67F00B0946E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F996E062F17E67F00B0946E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8F996E0B2F17E67F00B0946E /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F996E062F17E67F00B0946E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		8F996E0D2F17E67F00B0946E /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F996E062F17E67F00B0946E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		8F996E102F17E69000B0946E /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F996E0F2F17E69000B0946E /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8FC43A012F0BDF49005983DC /* Project object */;
 }
